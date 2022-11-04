@@ -1,0 +1,78 @@
+#q1 p{
+    background-color: yellow;
+    border: 1px solid;
+    width: 40%;
+    padding: 10px;
+}
+#q1:hover{
+    transform: scale(1, -1);
+}
+#box{
+    width: 10%;
+    background-color: red;
+    height: 20%;
+}
+#box:hover{
+    width: 20%;
+    height: 40%;
+    /* transform: rotate(180deg); */
+    transition-delay: 1s;
+    animation: animat 2s infinite;
+}
+@keyframes animat{
+    from{height: 40%; width:20%; transform: rotate(0deg);}
+    to{height: 40%; width:20%; transform: rotate(180deg);}
+}
+#image{
+    width: 20%;
+    height: 20%;
+    opacity: 0.7;
+    filter: grayscale(50%);
+    filter: blur(2px);
+}
+#q4{
+    float: left;
+    margin: 5px;
+    width: 20%;
+}
+#q4 figcaption{
+    text-align: center;
+}
+#q4 figure img{
+    height: 30%;
+    width: 100%;
+}
+#q4 figure{
+    margin: 0px;
+}
+@media screen and (min-width: 800px){
+    #q4{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 300px){
+    #q4{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    #q4{
+        width: 50%;
+    }
+}
+#q5 h2{
+    float: left;
+    color: white;
+    margin: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 20px purple, 0 0 5px darkblue;;
+    text-align: end;
+}
+#q5{
+    clear: both;
+    margin: 20px;
+}
+#q5 figure{
+    box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.2), 10px 10px 25px 0 rgba(0, 0, 0, 0.19);
+}
